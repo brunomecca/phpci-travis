@@ -1,16 +1,23 @@
 <?php
 	require 'PHPUnit/Autoload.php';
-	require 'FirstClass.php';
+	require_once 'FirstClass.php';
 
 	class FirstClassTest extends PHPUnit_Framework_TestCase{
 
-		public function init() {
+		public $obj = null;
+
+		public function setUp(){
+			$this->obj = new FirstClass();
+		}
+
+		public function tearDown(){
+			$this->obj = null;
+		}
 	        
-	    }
 
 		public function tests(){
-			$obj = new FirstClass();
-			echo "Teste 2: " . $this->assertEquals(40, $obj->soma(20,20));
+			$this->setUp();
+			$this->assertEquals(40, $this->obj->soma(20,20));
 		}
 	}
 
