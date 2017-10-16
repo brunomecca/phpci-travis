@@ -18,11 +18,13 @@
 	        
 
 		public function tests(){
+
 			$this->setUp();
 			$this->assertEquals(40, $this->obj->soma(20,20));
 			$this->assertEquals(30, $this->obj->sub(50,20));
 			$this->assertEquals(10, $this->obj->mult(2,5));
 			$this->assertEquals(10, $this->obj->div(100,10));
+
 		}
 	}
 
