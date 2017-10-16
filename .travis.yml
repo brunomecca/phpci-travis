@@ -6,7 +6,6 @@ php:
 
 before_script:
   - composer install --no-interaction
-  - phpunit install --no-interaction
 
 script: php composer.phar selfupdate
 
