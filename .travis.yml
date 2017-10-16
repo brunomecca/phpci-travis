@@ -6,4 +6,6 @@ php:
 before_script:
   - composer install --no-interaction
 
+script: php composer.phar selfupdate
+
 script: phpunit --configuration phpunit.xml --coverage-text
