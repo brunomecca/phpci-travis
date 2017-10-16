@@ -11,7 +11,7 @@
 		}
 
 		public function imgNow($imgSource){
-			return "<img src=". $imgSource . ">";
+			return '<img src="'. $imgSource .'">';
 		}
 	}
 
