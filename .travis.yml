@@ -13,3 +13,5 @@ before_script:
 script: php composer.phar selfupdate
 
 script: phpunit --configuration phpunit.xml --coverage-text
+
+deploy: skip_cleanup: false
