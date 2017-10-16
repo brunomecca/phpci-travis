@@ -1,5 +1,7 @@
 <?php
-	require_once 'PHPUnit/Autoload.php';
+	//para enviar ao travis, tire o comentario da linha abaixo
+	//require_once 'PHPUnit/Autoload.php';
+	
 	require_once 'FirstClass.php';
 
 	class FirstClassTest extends PHPUnit_Framework_TestCase{
