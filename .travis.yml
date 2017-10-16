@@ -14,5 +14,6 @@ script: phpunit --configuration phpunit.xml --coverage-text
 deploy:
   provider: pages
   skip_cleanup: false
+  github_token: BZPrRVVxYfCzaqYb6uft
   on:
     branch: master
